@@ -10,17 +10,11 @@
     <div class="topnav">
       <a href="index.html">HOME</a>
       <a href="cultural.html">CULTURAL</a>
+      <a href="dishes.html">DISHES</a>
+      <a href="dessert.html">DESSERT</a>
       <a href="forum.html">FORUM</a>
       <a class="active" href="contact.html">CONTACT</a>
-      <div class="login-container">
-          <form action="/action_page.php">
-              <a height="25" style="margin-right: 10px !important;" href="search.html"><img height="25" src="img/search.png" alt="Search icon"></a>
-              <input type="text" placeholder="Username" name="username">
-              <input type="text" placeholder="Password" name="psw">
-              <button style="margin-left: 10px !important;" type="submit">Login</button>
-          </form>
-      </div>
-  </div>
+    </div>
     <br>
     <div class="container">
         <form action="action_page.php">
@@ -40,6 +34,7 @@
             <option value="belgium">Belgium</option>
             <option value="costa rica">Costa Rica</option>
             <option value="denmark">Denmark</option>
+            <option value="egypt">Egypt</option>
             <option value="england">England</option>
             <option value="finland">Finland</option>
             <option value="germany">Germany</option>
@@ -49,7 +44,7 @@
             <option value="kosovo">Kosovo</option>
             <option value="luxembourg">Luxembourg</option>
             <option value="macedonia">Macedonia</option>
-            <option value="new zeland">New Zeland</option>
+            <option value="new zealand">New Zealand</option>
             <option value="oman">Oman</option>
             <option value="portugal">Portugal</option>
             <option value="qatar">Qatar</option>
@@ -57,7 +52,7 @@
             <option value="spain">Spain</option>
             <option value="taiwan">Taiwan</option>
             <option value="usa">USA</option>
-            <option value="ukrain">Ukrain</option>
+            <option value="ukraine">Ukraine</option>
             <option value="venezuela">Venezuela</option>
             <option value="yemen">Yemen</option>
             <option value="zimbabwe">Zimbabwe</option>
@@ -65,8 +60,19 @@
 
           </select>
           <label for="recipe">Recipe</label>
+          <br /><br />
+          <form action="/action_page.php" 
+          enctype="multipart/form-data"> 
+    
+          <input type="file" id="myfile" 
+              name="myfile" multiple="multiple" /> 
+            
+          <br /><br />  
+          </form> 
           <textarea id="subject" name="subject" placeholder="Share your favourite recipe with us.." style="height:200px"></textarea>
+        
          
+
           <label for="comments">Comments</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
@@ -76,8 +82,8 @@
       
           <input type="submit" value="Submit">
         
-          <footer>
-            <small> <center>&copy;Copyright 2022, SimplyCooked</center> </small>
+        <footer>
+            <small>&copy; Copyright 2022, SimplyCooked</small>
         </footer>
     
         </form>
